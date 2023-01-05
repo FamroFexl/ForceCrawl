@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "forcecrawl",
+  "version": "${version}",
+
+  "name": "Force Crawl",
+  "description": "Manually control when you crawl.",
+  "authors": [
+    "Famro Fexl"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/force-crawl/",
+    "issues": "https://github.com/FamroFexl/ForceCrawl/issues",
+    "sources": "https://github.com/FamroFexl/ForceCrawl/"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/forcecrawl/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.fexl.forcecrawl.ForceCrawl"
+    ]
+  },
+  "mixins": [
+    "forcecrawl.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.10",
+    "fabric": "*",
+    "minecraft": ">=1.17",
+    "java": ">=16"
+  }
+}
