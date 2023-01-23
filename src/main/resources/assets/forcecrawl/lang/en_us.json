@@ -1,0 +1,6 @@
+{
+	"key.forcecrawl.crawl": "Crawl Key",
+	"key.forcecrawl.category" : "Force Crawl",
+	"text.autoconfig.forcecrawl.title" : "Force Crawl",
+	"text.autoconfig.forcecrawl.option.settings.crawlMode" : "Crawl Mode"
+}
