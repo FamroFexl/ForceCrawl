@@ -6,7 +6,7 @@ plugins {
 sourceCompatibility = JavaVersion.VERSION_16
 targetCompatibility = JavaVersion.VERSION_16
 
-archivesBaseName = "forcecrawl-fabric-1.19.2"
+archivesBaseName = "forcecrawl-fabric-1.19.x"
 version = project.mod_version
 group = project.maven_group
 
