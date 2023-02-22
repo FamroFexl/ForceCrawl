@@ -4,9 +4,12 @@
   "package": "com.fexl.forcecrawl.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-  	"PlayerPose"
   ],
   "client": [
+  	"PlayerPoseClient"
+  ],
+  "server": [
+  	"PlayerPoseServer"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "forcecrawl",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "name": "Force Crawl",
   "description": "Manually control when you crawl.",
@@ -22,6 +22,9 @@
     "main": [
       "com.fexl.forcecrawl.ForceCrawl"
     ],
+    "client": [
+      "com.fexl.forcecrawl.ForceCrawlClient"
+    ],
     "modmenu": [
       "com.fexl.forcecrawl.config.ModMenu"
     ]
@@ -33,7 +36,7 @@
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",
-    "minecraft": "~1.18",
+    "minecraft": ">=1.17",
     "java": ">=16"
   }
 }
