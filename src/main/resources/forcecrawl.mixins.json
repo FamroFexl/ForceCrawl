@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.fexl.forcecrawl.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+  ],
+  "client": [
+  	"PlayerPoseClient"
+  ],
+  "server": [
+  	"PlayerPoseServer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
