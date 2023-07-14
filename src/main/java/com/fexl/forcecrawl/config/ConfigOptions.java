@@ -13,7 +13,7 @@ import net.fabricmc.loader.api.FabricLoader;
 
 @Environment(EnvType.CLIENT)
 public class ConfigOptions {
-	public static File configFile = new File(FabricLoader.getInstance().getConfigDir() + "\\forcecrawl.cfg");
+	public static File configFile = FabricLoader.getInstance().getConfigDir().resolve("forcecrawl.cfg").toFile();
 	
 	public static void fileInit() {
 		try {

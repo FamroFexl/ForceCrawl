@@ -1,6 +1,5 @@
 package com.fexl.forcecrawl;
 
-import com.fexl.forcecrawl.config.ConfigOptions;
 import com.fexl.forcecrawl.networking.Packets;
 
 import net.fabricmc.api.ModInitializer;
