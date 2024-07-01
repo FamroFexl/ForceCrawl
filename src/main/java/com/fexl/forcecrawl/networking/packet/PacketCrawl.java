@@ -13,20 +13,18 @@ import net.minecraft.world.entity.player.Player;
 
 import java.util.ArrayList;
 
+@Environment(EnvType.CLIENT)
 public class PacketCrawl {
 	
-	public static ArrayList<Player> crawlingPlayers = new ArrayList<Player>(0);
+	public static ArrayList<ServerPlayer> crawlingPlayers = new ArrayList<ServerPlayer>();
 	
 	public static void receive(MinecraftServer server, ServerPlayer player, ServerGamePacketListenerImpl handler, FriendlyByteBuf packet, PacketSender responseSender) {
-		if(packet.readBoolean() == true) {
-			if(server.isSingleplayer()) {
-				crawlingPlayers.add(player);
-			}
-			else {
-				crawlingPlayers.add(player);
-			}
+		if(packet.readBoolean()) {
+			System.out.println("Server: \"" + player + "\" Added to Crawling List");
+			crawlingPlayers.add(player);
 		}
 		else {
+			System.out.println("Server: \"" + player + "\" Removed from Crawling List");
 			crawlingPlayers.remove(player);
 		}
 	}

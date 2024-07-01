@@ -18,6 +18,7 @@
   "icon": "assets/forcecrawl/icon.png",
 
   "environment": "*",
+  "accessWidener": "forceCrawl.accesswidener",
   "entrypoints": {
     "main": [
       "com.fexl.forcecrawl.ForceCrawl"

@@ -6,7 +6,9 @@
   "mixins": [
   ],
   "client": [
-  	"PlayerPoseClient"
+  	"PlayerPoseClient",
+  	"OptionsScreen",
+  	"CrawlToggle"
   ],
   "server": [
   	"PlayerPoseServer"

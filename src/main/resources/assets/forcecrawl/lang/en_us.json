@@ -3,5 +3,6 @@
 	"key.forcecrawl.category": "Force Crawl",
 	"config.forcecrawl.crawlMode": "Crawl Mode",
 	"config.forcecrawl.title": "Force Crawl Config",
-	"packet.forcecrawl.crawl": "Crawl Packet"
+	"packet.forcecrawl.crawl": "Crawl Packet",
+	"option.forcecrawl.title": "Crawl"
 }

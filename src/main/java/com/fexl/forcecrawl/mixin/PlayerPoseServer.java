@@ -9,6 +9,7 @@ import com.fexl.forcecrawl.networking.packet.PacketCrawl;
 
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.player.Player;
 
