@@ -13,7 +13,6 @@ import net.minecraft.world.entity.player.Player;
 
 import java.util.ArrayList;
 
-@Environment(EnvType.CLIENT)
 public class PacketCrawl {
 	
 	public static ArrayList<ServerPlayer> crawlingPlayers = new ArrayList<ServerPlayer>();
