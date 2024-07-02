@@ -20,11 +20,9 @@ public class PacketCrawl {
 	
 	public static void receive(MinecraftServer server, ServerPlayer player, ServerGamePacketListenerImpl handler, FriendlyByteBuf packet, PacketSender responseSender) {
 		if(packet.readBoolean()) {
-			System.out.println("Server: \"" + player + "\" Added to Crawling List");
 			crawlingPlayers.add(player);
 		}
 		else {
-			System.out.println("Server: \"" + player + "\" Removed from Crawling List");
 			crawlingPlayers.remove(player);
 		}
 	}
