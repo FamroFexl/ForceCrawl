@@ -24,11 +24,9 @@ public class PlayerPoseClient {
 	@Inject(method = "Lnet/minecraft/world/entity/player/Player;updatePlayerPose()V", at = @At(value = "HEAD"), cancellable = true)
 	public void updatePlayerPose(CallbackInfo event) {
 		Player player = (Player)(Object) this;
-		//System.out.println(Minecraft.getInstance().getUser().getName().equals(player.getName().getString()));
 		
 		//Check if crawling has been activated
 		if(ForceCrawlClient.clientOn) {
-			System.out.println("Client: \"" + player + "\" Updated Crawling State");
 			player.setPose(Pose.SWIMMING);
 			event.cancel();
 		}
