@@ -16,7 +16,7 @@ public record PacketCrawl(Boolean bool) implements CustomPacketPayload {
 	
 	public static ArrayList<ServerPlayer> crawlingPlayers = new ArrayList<ServerPlayer>();
 	
-	public static void receive(MinecraftServer server, ServerPlayer player, Boolean bool) {
+	public static void receive(ServerPlayer player, Boolean bool) {
 		if(bool) {
 			crawlingPlayers.add(player);
 		}

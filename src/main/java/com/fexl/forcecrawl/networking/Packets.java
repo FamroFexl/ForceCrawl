@@ -10,7 +10,7 @@ public class Packets {
 	public static void registerC2SPackets() {
 		//Register server-side packet receiver
 		ServerPlayNetworking.registerGlobalReceiver(PacketCrawl.type, (payload, context) -> {
-			PacketCrawl.receive(context.server(), context.player(), payload.bool());
+			PacketCrawl.receive(context.player(), payload.bool());
 		});
 	}
 }
